@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">
+    {%csrf_token%}
+    first_name=<input  type="text" name="first_name" value="{{form.first_name}}"><br>
+    last_name=<input  type="text" name="last_name" value= {{form.last_name}}" ><br>
+    email=<input type="text" name="email" value= {{form.email}} ><br>
+    phone_number=<input type="text" name="phone_number" value= {{form.phone_number}}><br>
+    age=<input type="text" name="age"  value= {{form.age}}><br>
+
+
+
+
+    <input type="submit">
+</form><br>
+<a href="/student_list"><button> Back </button></a>
+</body>
+</html>
